@@ -1,0 +1,60 @@
+.orders {
+    display: flex;
+    justify-content: center;
+    color: #555;
+  padding: 100px;
+    .container {
+      width: 1400px;
+      padding: 50px 0px;
+        img{
+            width: 50px;
+        }
+      .title {
+        display: flex;
+        justify-content: space-between;
+  
+        button {
+          background-color: #1dbf73;
+          color: white;
+          font-weight: 500;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+  
+      table {
+        width: 100%;
+  
+        tr {
+          height: 50px;
+          th {
+            text-align: left;
+          }
+          td {
+            
+  
+            sup{
+              font-size: 12px;
+            }
+            
+            .image {
+              width: 100px; /* Change the value to the desired width */
+            height: 50px; /* Optionally, set the height as well */
+            object-fit: cover;
+            
+            }
+  
+            .delete {
+              width: 20px;
+              cursor: pointer;
+            }
+  
+          }
+          &:nth-child(even) {
+            background-color: #1dbf730f;
+          }
+        }
+      }
+    }
+  }

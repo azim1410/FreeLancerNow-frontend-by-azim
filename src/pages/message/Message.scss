@@ -1,0 +1,83 @@
+.message{
+    display: flex;
+    justify-content: center;
+    .container{
+        hr{
+           margin: 10px;
+            border: 2px solid rgb(169, 169, 169);
+        }
+        width: 1200px;
+        margin: 40px;
+       
+        .messages{
+            background-color: rgb(231, 231, 231);
+            border-radius: 20px;
+            
+            margin: 30px 0px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 500px;
+            overflow: scroll;
+            overflow-x: hidden;
+            // overflow-y: hidden;
+            // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+             
+                .item{
+
+                    &.owner{
+                        align-self: flex-end;
+                        flex-direction: row-reverse;
+                        p{
+                            border-radius: 50px 0px 50px 20px;
+                            background-color: rgb(180, 180, 180);
+                        }
+                    }
+
+                    display: flex;
+                    gap: 10px;
+                    max-width: 600px;
+                    img{
+                        border-radius: 50%;
+                        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                        width: 50px;
+                        height: 50px;
+                    }
+                    p{
+                        font-weight: 400;
+                        font-size: 20px;
+                        background-color: rgb(86, 183, 227);
+                        border-radius: 0px 50px 20px 50px;
+                        padding: 20px;
+                        color: white;
+                    }
+                }
+            
+        }
+        .write{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            textarea{
+                font-size: 20px;
+                width: 80%;
+                height: 50px;
+                padding: 10px;
+                border: 0px solid white;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+            button{
+                cursor: pointer;
+                border: 0px;
+                color: white;
+                font-size: 20px;
+                background-color: rgb(4, 152, 80);
+                width: 20%;
+                height: 70px;
+                padding: 10px;
+            }
+        }
+    }
+}
+

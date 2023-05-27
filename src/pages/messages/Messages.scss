@@ -1,0 +1,55 @@
+.messages {
+    display: flex;
+    justify-content: center;
+    color: #555;
+  padding: 100px;
+    .container {
+      width: 1400px;
+      padding: 50px 0px;
+        img{
+            width: 50px;
+        }
+      .title {
+        display: flex;
+        justify-content: space-between;
+  
+        
+      }
+  
+      table {
+        width: 100%;
+    
+  
+        tr {
+          height: 100px;
+          th {
+            text-align: left;
+          }
+
+          td {
+            padding: 10px;
+            
+  
+            sup{
+              font-size: 12px;
+            }
+            
+            
+  
+            button{
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 10px;
+                border: 0px;
+                background-color: rgb(52, 223, 100);
+            }
+  
+          }
+          &.active
+          {
+            background-color: rgb(153, 202, 153);
+          }
+        }
+      }
+    }
+  }
